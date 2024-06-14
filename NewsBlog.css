@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.newblog-container{
+    background-size: cover;
+    height: 100%;
+}
+
+.header{
+    background-color: #003366;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.header-context{
+    background-color: white;
+    border: 2px solid red;
+    padding: 20px;
+    width: 600px;
+}
+.top-head{
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.sub-head{
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.all-news{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+}
+.main-head{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.Blog-details{
+    display: flex;
+    padding: 40px;
+    font-family: sans-serif;
+}
+.Blog-text{
+    margin-left: 50px;
+}
+.Blog-text h3{
+    margin-bottom: 10px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Blog-text p{
+    margin-bottom: 10px;
+}
+
+.Readbtn{
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.Subscribe-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .category, .subscribe, .Blog-details, .all-news{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Blog-details{
+        margin-bottom: 10px;
+    }
+}
